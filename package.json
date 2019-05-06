@@ -1,9 +1,18 @@
 {
   "name": "vocabulary-level-grader",
   "version": "1.0.0",
-  "description": "Analyzes the givven text and determine what's the vocabulary level based on CEFR levels ",
+  "description": "Analyzes the given text and determine what's the vocabulary level based on CEFR levels ",
   "main": "index.js",
   "repository": "https://github.com/openderock/vocabulary-level-grader.git",
   "author": "Sajjad Shirazy <shirazy.sajjad@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
