@@ -1188,12 +1188,12 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extract-lemmatized-nonstop-words@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.13.tgz#bc4c359c807060433e9ba656ff1c88a6abffb92a"
-  integrity sha512-HgdoIOl8cSrRdecKz3ZB8jYDxXlWkzsyRX1vWcnvumJ8WAK8mesW55AC8GDm3oQNsto9qcNDhcVi4rDqa0dI2Q==
+extract-lemmatized-nonstop-words@^1.0.18:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/extract-lemmatized-nonstop-words/-/extract-lemmatized-nonstop-words-1.0.14.tgz#1d3d1d4c6b0786bc436137dd452995bc9e656937"
+  integrity sha512-9rHk7XgWJdNI3OW0BW72c4IYDaEV//RFbWyE6fVuyO6y2zq4ao/GOkT60/2WYDtUVMrsFhMc4OmwVwpFEzCe7w==
   dependencies:
-    text-preprocessor "^1.0.0"
+    text-preprocessor "^1.0.2"
     wink-lemmatizer "^3.0.1"
     wink-pos-tagger "^2.2.1"
 
@@ -3037,10 +3037,10 @@ term-size@^1.2.0:
   dependencies:
     execa "^0.7.0"
 
-text-preprocessor@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/text-preprocessor/-/text-preprocessor-1.0.0.tgz#5085e85ddccb35a71bad1fb46bbd84f15270d8f7"
-  integrity sha512-aDkvkDpezoD9SGJZCe+6DJlrRyK26A+yPHrTp+Zc6D8HnqQbTTz9zkbQHvPAGTDAuUrjKp/mw8Bixvd8UBmTmg==
+text-preprocessor@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/text-preprocessor/-/text-preprocessor-1.0.2.tgz#fbf698ffb85143b9d662372f15b38cfa6b23e6ab"
+  integrity sha512-2DJr+HSpZMEPwG5pYwnejtX5fD+IemsPCeSLR7UpsQ30/TuT/S8WJljpZexfpZa8fxEEoFGak1Edj2r0QsXd5w==
   dependencies:
     lodash "^4.17.11"
 
@@ -3222,10 +3222,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vocabulary-list-statistics@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/vocabulary-list-statistics/-/vocabulary-list-statistics-1.0.6.tgz#96592bbed209036d2da17f0ab6927d4f7720a703"
-  integrity sha512-lJZGWnaNXD0ZircQ+npt8Ysllo1em+v7qC0B95FnRZh1+mpRqomvFXMPkoloLrRHGP0zQEAPtK9lRFKidKpAoA==
+vocabulary-list-statistics@^1.0.4:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/vocabulary-list-statistics/-/vocabulary-list-statistics-1.0.8.tgz#ff7bf120b0d2ed39e8a92bd655e232b34e1dab91"
+  integrity sha512-hekwSO5WPGa7D/DzhEpKZV33l9RuH/J9AP7ypPh3y8K+R1jiI8roJ74odvYE2JQSX4gQ2et+lCJ/3fya+GDQeQ==
 
 wcwidth@^1.0.1:
   version "1.0.1"
