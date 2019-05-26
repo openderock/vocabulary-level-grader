@@ -16,7 +16,7 @@ test('grade the sample text', t => {
     t.is(output.words[0][1], 2);
     t.is(output.meta.words, 59);
     t.is(output.meta.grade, 'C2');
-    t.is(output.meta.mean, 1849.5762711864406);
+    t.is(output.meta.mean, 1848.9322033898304);
     t.is(output.meta.max, 8634);
     t.is(output.meta.levels.A1, 34.54545454545455);
     t.is(output.meta.levels.A2, 43.63636363636363);
