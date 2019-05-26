@@ -36,6 +36,8 @@ logs:
 ```javascript
 {
     "meta": {
+        "words": 59,
+        "grade": "C2",
         "mean": 2004.7796610169491,
         "max": 9874,
         "levels": {

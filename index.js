@@ -25,6 +25,7 @@ function grade(text) {
         output.words.set(vocabulary.word, (output.words.get(vocabulary.word) || 0) + 1);
     });
     // Arithmetic mean of vocabulary ranks of the text.
+    output.meta.words = tokens.length;
     output.meta.mean = sum(ranks) / tokens.length;
     output.meta.max = max(ranks);
     // Based on https://languagelearning.stackexchange.com/a/3065
@@ -36,6 +37,7 @@ function grade(text) {
         C1: ranks.filter(rank => rank <= 5000).length * 100 / ranks.length,
         C2: ranks.filter(rank => rank <= 10000).length * 100 / ranks.length,
     };
+    output.meta.grade = Object.keys(output.meta.levels)[Object.values(output.meta.levels).indexOf(100)];
     output.words = [...output.words].sort((a, b) => a[1] <= b[1] ? 1 : -1);
     return output;
 }
