@@ -37,7 +37,7 @@ function grade(text) {
         C1: ranks.filter(rank => rank <= 5000).length * 100 / ranks.length,
         C2: ranks.filter(rank => rank <= 10000).length * 100 / ranks.length,
     };
-    output.meta.grade = Object.keys(output.meta.levels)[Object.values(output.meta.levels).indexOf(100)];
+    output.meta.grade = output.meta.levels.C2 < 100 ? 'C2' : Object.keys(output.meta.levels)[Object.values(output.meta.levels).indexOf(100)];
     output.words = [...output.words].sort((a, b) => a[1] <= b[1] ? 1 : -1);
     return output;
 }

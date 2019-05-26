@@ -11,17 +11,18 @@ test('grade the sample text', t => {
         the long braids of a river gleaming at the bottom of a canyon.
         Above the wing the sky had deepened to a blue so pure he knew it would bring tears to his eyes if he looked long enough.
     `);
-    t.is(output.words.length, 51);
+    t.is(output.words.length, 55);
     t.is(output.words[0][0], 'with');
     t.is(output.words[0][1], 2);
     t.is(output.meta.words, 59);
     t.is(output.meta.grade, 'C2');
-    t.is(output.meta.mean, 1848.9322033898304);
-    t.is(output.meta.max, 8634);
-    t.is(output.meta.levels.A1, 34.54545454545455);
-    t.is(output.meta.levels.A2, 43.63636363636363);
-    t.is(output.meta.levels.B1, 54.54545454545455);
-    t.is(output.meta.levels.B2, 72.72727272727273);
-    t.is(output.meta.levels.C1, 87.27272727272727);
-    t.is(output.meta.levels.C2, 100);
+    t.is(output.meta.mean, 2892.8474576271187);
+    t.is(output.meta.max, 26786);
+    t.is(output.meta.levels.A1, 32.20338983050848);
+    t.is(output.meta.levels.A2, 40.67796610169491);
+    t.is(output.meta.levels.A2, 40.67796610169491);
+    t.is(output.meta.levels.B1, 50.847457627118644);
+    t.is(output.meta.levels.B2, 67.79661016949153);
+    t.is(output.meta.levels.C1, 81.35593220338983);
+    t.is(output.meta.levels.C2, 93.22033898305085);
 });

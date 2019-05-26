@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-level-grader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Analyzes the given text and determine what's the vocabulary level based on CEFR levels ",
   "main": "index.js",
   "repository": "https://github.com/openderock/vocabulary-level-grader.git",
@@ -16,6 +16,6 @@
   "dependencies": {
     "extract-lemmatized-nonstop-words": "^1.0.17",
     "lodash": "^4.17.11",
-    "vocabulary-list-statistics": "^1.0.11"
+    "vocabulary-list-statistics": "^1.0.12"
   }
 }
