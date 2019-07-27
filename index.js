@@ -11,15 +11,18 @@ vocabulary.forEach(item => {
  * @param {String} text 
  */
 function grade(text) {
-    const tokens = extract(text);
+    const tokens = extract(text, []);
     const output = {
         meta: {},
         words: new Map(),
     };
-    const ranks = [];
+    let ranks = [];
     tokens.forEach(token => {
         const vocabulary = wordsTable.get(token.vocabulary);
-        if (!vocabulary) return;
+        if (!vocabulary) {
+            ranks.push(0);
+            return;
+        }
         // if (token.pos == 'NN' && vocabulary.rank > 5000) return;// It's proper noun
         ranks.push(vocabulary.rank);
         output.words.set(vocabulary.word, (output.words.get(vocabulary.word) || 0) + 1);
