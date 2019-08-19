@@ -1,5 +1,5 @@
 # Vocabulary Level Grader
-Analyzes the given text and determine what's the vocabulary level based on CEFR levels.
+Analyzes the given text and determines what's the vocabulary level based on CEFR levels.
 
 ## Features
 - Calculates [Arithmetic mean](https://en.wikipedia.org/wiki/Arithmetic_mean) of vocabulary ranks of the text.
