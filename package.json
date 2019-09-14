@@ -6,11 +6,23 @@
   "repository": "https://github.com/openderock/vocabulary-level-grader.git",
   "author": "Sajjad Shirazy <shirazy.sajjad@gmail.com>",
   "license": "MIT",
-  "keywords": ["cefr", "vocabulary", "english", "level", "grade", "nlp", "grader"],
+  "keywords": [
+    "cefr",
+    "vocabulary",
+    "english",
+    "level",
+    "grade",
+    "nlp",
+    "grader"
+  ],
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "release:patch": "standard-version && git push --tags",
+    "release:minor": "standard-version --release-as minor && git push --tags",
+    "release:major": "standard-version --release-as major && git push --tags"
   },
   "devDependencies": {
+    "standard-version": "^7.0.0",
     "ava": "^1.4.1"
   },
   "dependencies": {

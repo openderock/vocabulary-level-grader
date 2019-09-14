@@ -33,14 +33,21 @@ function grade(text) {
     output.meta.max = max(ranks);
     // Based on https://languagelearning.stackexchange.com/a/3065
     output.meta.levels = {
-        A1: ranks.filter(rank => rank <= 300).length * 100 / ranks.length,
-        A2: ranks.filter(rank => rank <= 600).length * 100 / ranks.length,
-        B1: ranks.filter(rank => rank <= 1200).length * 100 / ranks.length,
-        B2: ranks.filter(rank => rank <= 2500).length * 100 / ranks.length,
-        C1: ranks.filter(rank => rank <= 5000).length * 100 / ranks.length,
-        C2: ranks.filter(rank => rank <= 10000).length * 100 / ranks.length,
+        A1: ranks.filter(rank => rank <= 600).length * 100 / ranks.length,
+        A2: ranks.filter(rank => rank <= 1200).length * 100 / ranks.length,
+        B1: ranks.filter(rank => rank <= 2500).length * 100 / ranks.length,
+        B2: ranks.filter(rank => rank <= 5000).length * 100 / ranks.length,
+        C1: ranks.filter(rank => rank <= 10000).length * 100 / ranks.length,
+        C2: ranks.filter(rank => rank <= 20000).length * 100 / ranks.length,
     };
-    output.meta.grade = output.meta.levels.C2 < 100 ? 'C2' : Object.keys(output.meta.levels)[Object.values(output.meta.levels).indexOf(100)];
+    output.meta.grade = 'C2';
+    for (const level in output.meta.levels) {
+        if (output.meta.levels[level] >= 90) {
+            output.meta.grade = level;
+            break;
+        }
+    }
+    // output.meta.grade = output.meta.levels.C2 < 90 ? 'C2' : Object.keys(output.meta.levels)[Object.values(output.meta.levels).indexOf(100)];
     output.words = [...output.words].sort((a, b) => a[1] <= b[1] ? 1 : -1);
     return output;
 }
